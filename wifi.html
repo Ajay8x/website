@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wi-Fi Network Details</title>
+  <link rel="icon" href="icon/wifi.png">
+  <style>
+    /* General Reset and Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1E90FF;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Style the navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #000000;
+      padding: 1px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the navigation bar links */
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .navbar li a {
+      display: block;
+      color: #fffefe;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: solid;
+      transition: all 0.3s ease;
+    }
+
+    /* Change color on hover */
+    .navbar li a:hover {
+      background-color: #99a9c093;
+      color: rgb(255, 0, 0);
+      transform: scale(1.1);
+    }
+
+    /* Add a color to the active/current link */
+    .navbar li a.active {
+      background-color: #04aa94;
+      color: rgb(255, 255, 255);
+      border-bottom: 2px solid #fff;
+    }
+
+    /* Wi-Fi Details Card Styling */
+    .wifi-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 350px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .wifi-card h2 {
+      color: #00FF7F;
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .wifi-info {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+
+    .wifi-info p {
+      margin: 8px 0;
+    }
+
+    /* Network Password Styling */
+    .wifi-password {
+      font-size: 1.2em;
+      background-color: #555;
+      color: #FFDD57;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    
+    /* Instruction Text */
+    .instruction {
+      font-size: 0.9em;
+      color: #bbb;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div class="wifi-card">
+    <h2>Wi-Fi Network Details</h2>
+    <div class="wifi-info">
+      <p><strong>Network Name:</strong> vindhya_gurukul_college</p>
+      <p><strong>Network Type:</strong> WPA/WPA2</p>
+      <div class="wifi-password">
+        <strong>Password:</strong> Vindhya@486
+      </div>
+    </div>
+    <p class="instruction">Use the above details to connect to the Wi-Fi network.</p>
+  </div>
+
+  <div class="wifi-card">
+    <h2>Wi-Fi Network Details</h2>
+    <div class="wifi-info">
+      <p><strong>Network Name:</strong> VGCP</p>
+      <p><strong>Network Type:</strong> WPA/WPA2</p>
+      <div class="wifi-password">
+        <strong>Password:</strong> vgcp5@54321
+      </div>
+    </div>
+    <p class="instruction">Use the above details to connect to the Wi-Fi network.</p>
+  </div>
+</body>
+</html>

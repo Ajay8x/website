@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My World</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6c757d;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        /* Content Sections */
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .highlight-text {
+            color: rgb(0, 251, 255);
+        }
+
+        .media-section audio,
+        .media-section video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            outline: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Additional Styles */
+        .hacking-code {
+            font-family: monospace;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            margin-right: 8px;
+        }
+
+        .search-bar button {
+            padding: 8px 16px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="login.html" target="_blank">Login</a>
+    <a href="index.html" target="_blank">Home</a>
+    <a href="OtherService.html" target="_blank">Other Services</a>
+    <a href="DarkInfo.html" target="_blank">Dark Info</a>
+    <a href="about.html" target="_blank">About Us</a>
+    <a href="wifi.html" target="_blank">WiFi Info</a>
+</nav>
+
+<!-- Header -->
+<header>Welcome to My World</header>
+
+<!-- Search Section -->
+<div class="search-bar">
+    <input type="text" placeholder="Search..." id="search" name="search">
+    <button type="search">Search</button>
+</div>
+
+<!-- Main Content -->
+<div class="section">
+    <h1 class="highlight-text">1.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla. Etiam ac dolor vel erat pulvinar elementum quis vitae orci.</p>
+</div>
+
+<!-- Audio Section -->
+<div class="section media-section">
+    <h2>Jalebi</h2>
+    <audio src="audio/Jalebi.mp3" controls></audio>
+</div>
+
+<div class="section media-section">
+    <h2>BEN-10</h2>
+    <audio src="audio/BEN10.mp3" controls></audio>
+</div>
+
+<div class="section media-section">
+    <h2>Lo Maan Liya</h2>
+    <audio src="audio/Lo Maan Liya.mp3" controls></audio>
+</div>
+
+<!-- Video Section -->
+<div class="section media-section">
+    <h2>Pain - Naruto Shippuden</h2>
+    <video controls poster="QR.png">
+        <source src="video/Pain.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+</div>
+
+<div class="section media-section">
+    <h2>Bom Diggy Diggy</h2>
+    <video controls poster="Screenshot.png">
+        <source src="/path/to/video.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+</div>
+
+<!-- Additional Text Section -->
+<div class="section">
+    <h1>2.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla. Etiam ac dolor vel erat pulvinar elementum quis vitae orci.</p>
+</div>
+
+<div class="section">
+    <h1>3.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla. Etiam ac dolor vel erat pulvinar elementum quis vitae orci.</p>
+</div>
+
+<!-- Hacking Code Section -->
+<div class="section hacking-code">
+    <p>010101100010111101110111011101101...</p>
+    <p>Hacking.....</p>
+    <p>010101000110001010101110101001010111011110...</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2023 Ajay Singh. All Rights Reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript to Pause Other Media When One Starts Playing -->
+<script>
+    // Get all audio and video elements
+    const mediaElements = document.querySelectorAll('audio, video');
+
+    // Loop through each media element
+    mediaElements.forEach(media => {
+        media.addEventListener('play', () => {
+            // Pause all other media elements
+            mediaElements.forEach(otherMedia => {
+                if (otherMedia !== media) {
+                    otherMedia.pause();
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

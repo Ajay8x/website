@@ -1,0 +1,3 @@
+Redirect 301 /https://hackyhack.000.pe https://hackyhack.000.pe
+php_value display_errors On
+php_value date.timezone Indian/Antananarivo

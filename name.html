@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stylized Names</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #003366); /* Changed background */
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        center {
+            font-size: 200px;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Box style for each name */
+        .box {
+            padding: 20px 40px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: fadeIn 2s forwards, glow 2s ease-in-out infinite alternate;
+            opacity: 0; /* Fade-in effect starts from 0 */
+        }
+
+        /* Individual styles for each name with background color */
+        .name {
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        .name-1 {
+            color: #ff3b3b;
+            border: 2px solid #ff3b3b;
+            background-color: rgba(255, 59, 59, 0.1); /* Semi-transparent background */
+        }
+
+        .name-2 {
+            color: #3b8dff;
+            border: 2px solid #3b8dff;
+            background-color: rgba(59, 141, 255, 0.1);
+        }
+
+        .name-3 {
+            color: #ffd700;
+            border: 2px solid #ffd700;
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        /* Glow Animation */
+        @keyframes glow {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Fade-In Effect */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="box name-1">
+            <p class="name">ALOK SINGH</p>
+        </div>
+        <div class="box name-2">
+            <p class="name">Ajay Singh</p>
+        </div>
+        <div class="box name-3">
+            <p class="name">ABHAY SINGH</p>
+        </div>
+    </center>
+</body>
+</html>
